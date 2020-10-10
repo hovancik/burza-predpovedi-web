@@ -25,7 +25,7 @@
     <meta name="og:site_name" content="Zajtrašie.sk">
     <meta name="og:locale" content="sk">
     <meta name="og:type" content="website">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <link rel="stylesheet" href="https://unpkg.com/bulmaswatch/flatly/bulmaswatch.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.png">
@@ -33,6 +33,21 @@
   <body>
     <section class="hero is-primary is-bold">
       <div class="hero-body">
+        <div class="modal is-active" id="modal">
+          <div class="modal-background"></div>
+          <div class="modal-content">
+            <div class="box content is-large">
+              <p>
+                Zajtrajšie.sk, bohužial, nevzbudilo dostatočnú pozornosť a preto sa na
+                projekte aktívne nepokračuje.
+              </p>
+              <p>
+                Uvidíme, čo prinesie zajtrajšok :)
+              </p>
+            </div>
+          </div>
+          <button class="modal-close is-large" aria-label="close" onclick="document.querySelector('#modal').classList.toggle('is-active')"></button>
+        </div>
         <div class="container">
           <div class="columns">
             <div class="column is-two-quarters">
